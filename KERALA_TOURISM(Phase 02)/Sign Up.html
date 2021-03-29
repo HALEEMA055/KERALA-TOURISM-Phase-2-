@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+
+<body background="./image.jpg/bg3.jpg"s>
+     <!--/header begins-->
+     <header>
+        <img src="image.jpg/logo4.PNG" alt="logo4">
+
+        <div class="Head-tag">
+            <a href="index1.html">Home</a>
+            <a href="About Us.html">About us</a>
+            <a href="District.html">Districts</a>
+            <a href="Login.html">Login</a>
+            <a href="Sign Up.html">Sign Up</a>
+        </div>
+    </header>
+    <!--/header ends-->
+
+    <!-- sign up begins -->
+
+<div class="SignUp">
+  <h3 class="signin">Enter Your Details</h3>
+
+  <form action = "success.html" class="col-lg-5-signin" onsubmit = "return validation();">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" placeholder="Enter Email ID" class="form-control" id="email_signup" required onkeyup = "return emailchange()" aria-describedby="emailHelp">
+      <label for="error" id="error_email_signup"></label>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputName1" class="form-label">Name</label>
+        <input type="text" placeholder="Enter Name" class="form-control" id="name_signup" required>
+        <br>
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" placeholder="Minimum 8 characters, with atleast one uppercase, one lower case, and one number" id="password_signup1" required onkeyup = "return password1change()">
+      <label for="error" id="error_password_signup1"></label>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" placeholder = "Re enter Password" id="password_signup2" required onkeyup = "return password2change()">
+        <label for="error" id="error_password_signup2"></label>
+     </div>
+    <div class="mb-3">
+       <label for="exampleInputPhone1" class="form-label">Mobile Number</label>
+       <input type="tel" class="form-control" id="number_signup" placeholder="Enter Mobile Number" required onkeyup = "return mobilechange()">
+       <label for="error" id="error_number_signup"></label>
+    </div>
+    <div class="mb-3">
+      <a href="index1.html">Already have an account? Sign in</a>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <script src="./js/SignUp_validate.js"></script>
+</div>
+  
+  
+<!-- sign up ends -->
+
+     <!--footer begins-->
+     <footer>
+        <div class="Foot-taga">
+            Copyright@Haleemath Swathiyya 2021-All rights reserved
+        </div>
+    </footer> 
+    <!--/footer ends-->
+</body>
+</html>

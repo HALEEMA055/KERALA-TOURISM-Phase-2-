@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</head>
+<body background="./image.jpg/bg3.jpg">
+     <!--/header begins-->
+     <header>
+        <img src="image.jpg/logo4.PNG" alt="logo4">
+
+        <div class="Head-tag">
+            <a href="index1.html">Home</a>
+            <a href="About Us.html">About us</a>
+            <a href="District.html">Districts</a>
+            <a href="Login.html">Login</a>
+            <a href="Sign Up.html">Sign Up</a>
+        </div>
+    </header>
+    <!--/header ends-->
+<!-- login form -->
+<div class="login">
+      
+      <form action="success.html" class="col-lg-5-signin" onsubmit="return validation()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" placeholder="Enter Email ID" class="form-control" id="email_signin" required onchange = "return emailcheck()" aria-describedby="emailHelp">
+          <label for="error" class="form-label" id="error_email_signin"></label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" placeholder="Enter Password" class="form-control" id="password_signin" required onchange = "return passwordcheck()">
+          <label for="error" class="form-label" id="error_password_signin"></label>
+        </div>
+        <div class="mb-3">
+          <a href="Sign Up.html">No account? Create one right away</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+<div class="col-md-4"></div>  
+<script src="./js/Login_validate.js"></script>
+</div>
+
+
+
+
+
+
+
+     <!--footer begins-->
+    <footer>
+        <div class="Foot-tag">
+            Copyright@Haleemath Swathiyya 2021-All rights reserved
+        </div>
+    </footer>
+    <!--/footer ends-->
+</body>
+</html>
